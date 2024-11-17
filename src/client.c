@@ -6,7 +6,7 @@
 /*   By: sklaokli <sklaokli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 17:15:16 by sklaokli          #+#    #+#             */
-/*   Updated: 2024/11/18 01:07:51 by sklaokli         ###   ########.fr       */
+/*   Updated: 2024/11/18 01:29:44 by sklaokli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,6 @@ int	main(int ac, char *av[])
 	if (signal(SIGUSR2, &feedback_handler) == SIG_ERR)
 		ft_exit_error(SIGNAL_SENT_FAILURE_MSG);
 	send_message_to_server(pid, av[2]);
+	ft_putstr_fd(SIGNAL_SENT_SUCCESS_MSG, 1);
 	exit(EXIT_SUCCESS);
 }
