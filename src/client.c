@@ -61,7 +61,6 @@ static void	send_message_to_server(int pid, char *msg)
 	i = -1;
 	while (msg[++i])
 		send_bits(pid, msg[i]);
-	send_bits(pid, '\0');
 	send_bits(pid, '\n');
 }
 
