@@ -21,7 +21,7 @@
 # define PERROR_MSG "error: an error occurs during process.\n"
 # define INVALID_ARGS_MSG "error: invalid number of arguments.\n"
 # define INVALID_PID_MSG "error: invalid PID, please try again.\n"
-# define SIGNAL_SENT_FAILURE_MSG "signal error! :("
+# define SIGNAL_SENT_FAILURE_MSG "signal error! :(\n"
 # define SIGNAL_SENT_SUCCESS_MSG "signal sent OK! :D\n"
 
 int		ft_atoi(const char *ptr);
